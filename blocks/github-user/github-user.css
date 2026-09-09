@@ -1,0 +1,26 @@
+/* blocks/github-user/github-user.css */
+
+.github-user-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  .github-user-card .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  
+  .github-user-card .error {
+    color: #c0392b;
+  }
+
+  .github-user-card ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+  }

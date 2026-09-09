@@ -1,0 +1,106 @@
+.product-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  min-height: 570px;
+  background: linear-gradient(120deg, #031d73 0%, #074a9e 58%, #00a6d9 100%);
+  color: white;
+}
+
+.product-hero-copy {
+  align-self: center;
+  padding: 56px max(32px, calc((100vw - 1280px) / 2));
+}
+
+.product-hero .product-hero-eyebrow {
+  margin: 0 0 20px;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.product-hero h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1;
+}
+
+.product-hero .product-hero-lede,
+.product-hero p {
+  max-width: 560px;
+  color: white;
+}
+
+.product-hero .product-hero-lede {
+  margin: 24px 0;
+  font-size: 1.4rem;
+}
+
+.product-hero-stats {
+  display: flex;
+  gap: 48px;
+  margin: 32px 0;
+}
+
+.product-hero-stats div {
+  display: grid;
+}
+
+.product-hero-stats strong {
+  font-size: 1.65rem;
+}
+
+.product-hero-stats span {
+  max-width: 180px;
+}
+
+.product-hero-art {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.product-hero-art picture,
+.product-hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-hero a.button,
+.product-hero a.button.primary,
+.product-hero a.button.secondary {
+  border-color: white;
+  border-radius: 2px;
+  background: white;
+  color: var(--citi-blue, #04208f);
+}
+
+.product-hero a.button:hover,
+.product-hero a.button.primary:hover {
+  border-color: #f0f5f7;
+  background: #f0f5f7;
+  color: var(--citi-blue, #04208f);
+}
+
+@media (width < 900px) {
+  .product-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero-copy {
+    padding: 48px 24px;
+  }
+
+  .product-hero-art {
+    min-height: 330px;
+  }
+}
+
+@media (width < 600px) {
+  .product-hero-stats {
+    gap: 24px;
+  }
+}

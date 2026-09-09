@@ -1,0 +1,30 @@
+.product-cards ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-cards li {
+  padding: 24px;
+  border: 1px solid var(--citi-border, #d6dadd);
+  text-align: center;
+}
+
+.product-cards-image img {
+  width: 100%;
+  aspect-ratio: 306 / 192;
+  object-fit: contain;
+}
+
+.product-cards-body a {
+  font-weight: 700;
+}
+
+@media (width < 900px) {
+  .product-cards ul {
+    grid-template-columns: 1fr;
+  }
+}

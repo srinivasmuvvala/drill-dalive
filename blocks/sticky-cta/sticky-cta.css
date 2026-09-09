@@ -1,0 +1,36 @@
+.sticky-cta-wrapper {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+}
+
+.sticky-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--citi-border, #d6dadd);
+  background: white;
+  box-shadow: 0 -4px 16px rgb(0 0 0 / 10%);
+  font-weight: 700;
+}
+
+.sticky-cta a.button,
+.sticky-cta a.button.primary {
+  border-color: var(--citi-blue, #04208f);
+  border-radius: 2px;
+  background: var(--citi-blue, #04208f);
+  color: white;
+}
+
+@media (width < 600px) {
+  .sticky-cta-label {
+    display: none;
+  }
+
+  .sticky-cta-action,
+  .sticky-cta a.button {
+    width: 100%;
+  }
+}

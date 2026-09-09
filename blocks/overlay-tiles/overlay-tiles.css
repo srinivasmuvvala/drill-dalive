@@ -1,0 +1,50 @@
+.overlay-tiles ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overlay-tiles li {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+}
+
+.overlay-tiles-image,
+.overlay-tiles-image picture,
+.overlay-tiles-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-tiles-image img {
+  object-fit: cover;
+}
+
+.overlay-tiles-body {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 48px 24px 24px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 80%));
+  color: white;
+}
+
+.overlay-tiles-body :is(h2, h3, h4, p) {
+  margin: 0;
+  color: white;
+}
+
+@media (width < 900px) {
+  .overlay-tiles ul {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-tiles li {
+    min-height: 270px;
+  }
+}

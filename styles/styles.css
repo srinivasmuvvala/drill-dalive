@@ -323,3 +323,83 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+body.citi-card {
+  --citi-blue: #04208f;
+  --citi-navy: #002d72;
+  --citi-cyan: #00bdf2;
+  --citi-ink: #26292b;
+  --citi-muted: #5e676b;
+  --citi-pale: #f0f5f7;
+  --citi-border: #d6dadd;
+  --text-color: var(--citi-ink);
+  --link-color: var(--citi-blue);
+  --link-hover-color: #40c;
+  --body-font-family: arial, helvetica, sans-serif;
+  --heading-font-family: arial, helvetica, sans-serif;
+}
+
+body.citi-card main h2 {
+  color: var(--citi-navy);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+body.citi-card main > .section.hero,
+body.citi-card main > .section.bleed {
+  margin: 0;
+}
+
+body.citi-card main > .section.hero > div,
+body.citi-card main > .section.bleed > div {
+  max-width: none;
+  padding: 0;
+}
+
+body.citi-card main > .section.pale {
+  margin: 0;
+  padding: 64px 0;
+  background-color: var(--citi-pale);
+}
+
+body.citi-card main > .section.centered .default-content-wrapper {
+  text-align: center;
+}
+
+body.citi-card main > .section.centered .default-content-wrapper p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--citi-muted);
+}
+
+body.citi-card main > .section.disclaimer .default-content-wrapper {
+  max-width: 1280px;
+}
+
+body.citi-card main > .section.disclaimer .default-content-wrapper p {
+  color: var(--citi-muted);
+  font-size: 0.78rem;
+}
+
+body.citi-card main > .section.sticky {
+  margin: 0;
+  padding: 0;
+}
+
+body.citi-card a.button.primary {
+  border-radius: 2px;
+}
+
+body.citi-card header .nav-wrapper {
+  border-bottom: 1px solid var(--citi-border);
+}
+
+body.citi-card footer .footer {
+  background: var(--citi-navy);
+  color: white;
+}
+
+body.citi-card footer .footer a {
+  color: white;
+}
